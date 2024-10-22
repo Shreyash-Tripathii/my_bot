@@ -28,6 +28,12 @@ def generate_launch_description():
     my_world = os.path.join(get_package_share_directory(package_name), 'world', 'my_world.world')
     gazebo_params_path = os.path.join(get_package_share_directory(package_name), 'config', 'gazebo_params.yaml')
 
+    joystick = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    get_package_share_directory(package_name),'launch','joystick_control.launch.py'
+                )]), launch_arguments={'use_sim_time': 'true'}.items()
+    )
+
     # Include the Gazebo launch file, provided by the gazebo_ros package
     gazebo = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
@@ -58,6 +64,7 @@ def generate_launch_description():
     # Launch them all!
     return LaunchDescription([
         rsp,
+        joystick,
         gazebo,
         spawn_entity,
         diff_drive_spawner,
