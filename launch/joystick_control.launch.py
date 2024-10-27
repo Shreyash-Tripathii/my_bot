@@ -33,5 +33,4 @@ def generate_launch_description():
             description='Use sim time if true'),
         joy_node,
         teleop_node,
-        # twist_stamper       
     ])

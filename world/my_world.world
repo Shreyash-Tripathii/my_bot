@@ -89,55 +89,6 @@
       <elevation>0</elevation>
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
-    <model name='Construction Cone'>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <scale>10 10 10</scale>
-              <uri>model://construction_cone/meshes/construction_cone.dae</uri>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <scale>10 10 10</scale>
-              <uri>model://construction_cone/meshes/construction_cone.dae</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <inertial>
-          <pose>0 0 0 0 -0 0</pose>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-          <mass>1</mass>
-        </inertial>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose>0.803963 -0.849989 0 0 -0 0</pose>
-    </model>
     <model name='Construction Barrel'>
       <link name='link'>
         <inertial>
@@ -184,53 +135,6 @@
         <kinematic>0</kinematic>
       </link>
       <pose>2.46992 -1.1916 0 0 -0 0</pose>
-    </model>
-    <model name='Construction Barrel_0'>
-      <link name='link'>
-        <inertial>
-          <pose>0 0 0.4 0 -0 0</pose>
-          <mass>500</mass>
-          <inertia>
-            <ixx>51.2096</ixx>
-            <iyy>51.2096</iyy>
-            <izz>25</izz>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyz>0</iyz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://construction_barrel/meshes/construction_barrel.dae</uri>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://construction_barrel/meshes/construction_barrel.dae</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose>1.97363 2.27391 0 0 -0 0</pose>
     </model>
     <model name='Construction Cone_0'>
       <link name='link'>
@@ -380,68 +284,88 @@
       <pose>5.39464 1.21675 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>284 762000000</sim_time>
-      <real_time>48 701248461</real_time>
-      <wall_time>1729617979 172492432</wall_time>
-      <iterations>48377</iterations>
+      <sim_time>75 375000000</sim_time>
+      <real_time>75 762645395</real_time>
+      <wall_time>1729625291 824936223</wall_time>
+      <iterations>75375</iterations>
       <model name='Construction Barrel'>
-        <pose>2.46988 -1.19162 0 1e-06 1e-06 -1.4e-05</pose>
+        <pose>2.04615 -2.40216 -2e-06 8e-06 -4e-06 -2.3e-05</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>2.46988 -1.19162 0 1e-06 1e-06 -1.4e-05</pose>
+          <pose>2.04615 -2.40216 -2e-06 8e-06 -4e-06 -2.3e-05</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.24939 3.69762 -0.314174 -2.96174 -0.62574 -7.7e-05</acceleration>
-          <wrench>-124.695 1848.81 -157.087 0 -0 0</wrench>
+          <acceleration>1.10182 -3.2021 -4.08226 -1.41947 0.387046 3.14148</acceleration>
+          <wrench>550.912 -1601.05 -2041.13 0 -0 0</wrench>
         </link>
       </model>
       <model name='Construction Barrel_0'>
-        <pose>1.97359 2.27389 0 0 1e-06 -1.3e-05</pose>
+        <pose>-0.560037 2.62427 1e-06 3e-06 2e-06 -5e-06</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>1.97359 2.27389 0 0 1e-06 -1.3e-05</pose>
+          <pose>-0.560037 2.62427 1e-06 3e-06 2e-06 -5e-06</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-9.20713 4.38758 5.69548 -1.52106 1.19974 3.02642</acceleration>
-          <wrench>-4603.56 2193.79 2847.74 0 -0 0</wrench>
+          <acceleration>-0.127609 6.72899 1.66266 2.02059 -0.390978 0.035235</acceleration>
+          <wrench>-63.8047 3364.49 831.33 0 -0 0</wrench>
         </link>
       </model>
       <model name='Construction Cone'>
-        <pose>-0.980214 -1.57544 -1e-05 -0 -0 -0</pose>
+        <pose>-2.6406 -1.48819 -0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-0.980214 -1.57544 -1e-05 -0 -0 -0</pose>
+          <pose>-2.6406 -1.48819 -0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0 -0 -9.79994 1.4e-05 1e-05 0</acceleration>
+          <wrench>-0 -0 -9.79994 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Construction Cone_0'>
+        <pose>-2.53198 0.295946 -5e-06 -4e-06 1e-06 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-2.53198 0.295946 -5e-06 -4e-06 1e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
       </model>
-      <model name='Construction Cone_0'>
-        <pose>-2.53198 0.295946 -0 0 -0 0</pose>
+      <model name='Construction Cone_1'>
+        <pose>-1.60116 4.02084 -0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-2.53198 0.295946 -0 0 -0 0</pose>
+          <pose>-1.60116 4.02084 -0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 -0 -0.008512 -2.58585 1.13682 3.14159</acceleration>
           <wrench>0 -0 -0.008512 0 -0 0</wrench>
         </link>
       </model>
-      <model name='Construction Cone_1'>
-        <pose>-1.60116 4.02084 -8e-06 1e-06 -0 0</pose>
+      <model name='Construction Cone_2'>
+        <pose>-1.18778 -1.5444 -0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-1.60116 4.02084 -8e-06 1e-06 -0 0</pose>
+          <pose>-1.18778 -1.5444 -0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 -9.8 0 -0 0</acceleration>
-          <wrench>0 0 -9.8 0 -0 0</wrench>
+          <acceleration>0 -0 -0.008512 -2.58585 1.13682 3.14159</acceleration>
+          <wrench>0 -0 -0.008512 0 -0 0</wrench>
         </link>
       </model>
-      <model name='Construction Cone_2'>
-        <pose>5.39464 1.21675 -0 0 -1e-06 0</pose>
+      <model name='Construction Cone_3'>
+        <pose>3.13975 2.50557 -0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>5.39464 1.21675 -0 0 -1e-06 0</pose>
+          <pose>3.13975 2.50557 -0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 0 0.008512 2.58585 -1.13682 -3.14159</acceleration>
-          <wrench>-0 0 0.008512 0 -0 0</wrench>
+          <acceleration>0 -0 -0.008512 -2.58585 1.13682 3.14159</acceleration>
+          <wrench>0 -0 -0.008512 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Construction Cone_4'>
+        <pose>2.74783 0.482258 -1e-06 2e-06 2e-06 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>2.74783 0.482258 -1e-06 2e-06 2e-06 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 -0 -0.827098 -1.61458 0.885267 -3.14159</acceleration>
+          <wrench>0 -0 -0.827098 0 -0 0</wrench>
         </link>
       </model>
       <model name='ground_plane'>
@@ -454,365 +378,210 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='my_bot'>
-        <pose>-0.032927 4.2e-05 0.032997 -1.7e-05 1.8e-05 0.001082</pose>
-        <scale>1 1 1</scale>
-        <link name='base_link'>
-          <pose>-0.032927 4.2e-05 0.032997 -1.7e-05 1.8e-05 0.001082</pose>
-          <velocity>-0.000682 -0.001279 -0 -0.032578 -3.2e-05 0.005514</velocity>
-          <acceleration>-0.001692 1.99898 -0.000604 -2.32432 -0.082672 -1.57495</acceleration>
-          <wrench>-0.001032 1.21938 -0.000368 0 -0 0</wrench>
-        </link>
-        <link name='left_wheel'>
-          <pose>-0.033088 0.148539 0.032995 -1.57103 0.077667 0.001064</pose>
-          <velocity>-0.001479 -0.000742 -0.0049 0.020684 2.2e-05 0.005534</velocity>
-          <acceleration>-1.60807 -2.02272 -9.7383 0.672173 -0.009455 -0.602118</acceleration>
-          <wrench>-0.080403 -0.101136 -0.486915 0 -0 0</wrench>
-        </link>
-        <link name='right_wheel'>
-          <pose>-0.032767 -0.148456 0.033 1.57105 0.079375 0.001103</pose>
-          <velocity>0.000109 -0.000755 0.004915 0.021041 0.003262 0.00549</velocity>
-          <acceleration>1.60677 -2.03413 9.75223 -2.11083 1.19894 2.46584</acceleration>
-          <wrench>0.080338 -0.101706 0.487611 0 -0 0</wrench>
-        </link>
-      </model>
       <light name='sun'>
         <pose>0 0 10 0 -0 0</pose>
       </light>
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>3.20256 27.4256 37.3514 0 0.963643 -1.9638</pose>
+        <pose>1.39474 21.3119 25.4152 0 0.963643 -1.9638</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
-    <model name='my_bot'>
-      <link name='base_link'>
-        <inertial>
-          <pose>-0.067475 0 0.081344 0 -0 0</pose>
-          <mass>0.61</mass>
-          <inertia>
-            <ixx>0.00558311</ixx>
-            <ixy>0</ixy>
-            <ixz>0.00046634</ixz>
-            <iyy>0.00757656</iyy>
-            <iyz>0</iyz>
-            <izz>0.00797303</izz>
-          </inertia>
-        </inertial>
-        <collision name='base_link_fixed_joint_lump__chassis_collision'>
-          <pose>-0.0585 0 0.059 0 -0 0</pose>
+    <model name='Construction Cone_3'>
+      <link name='link'>
+        <collision name='collision'>
           <geometry>
-            <box>
-              <size>0.335 0.265 0.138</size>
-            </box>
+            <mesh>
+              <scale>10 10 10</scale>
+              <uri>model://construction_cone/meshes/construction_cone.dae</uri>
+            </mesh>
           </geometry>
+          <max_contacts>10</max_contacts>
           <surface>
             <contact>
               <ode/>
             </contact>
+            <bounce/>
             <friction>
-              <ode/>
               <torsional>
                 <ode/>
               </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <collision name='base_link_fixed_joint_lump__caster_wheel_collision_1'>
-          <pose>-0.151 0 -0.008 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.025</radius>
-            </sphere>
-          </geometry>
-          <surface>
-            <contact>
               <ode/>
-            </contact>
-            <friction>
-              <ode>
-                <mu>0.001</mu>
-                <mu2>0.001</mu2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
             </friction>
-            <bounce/>
           </surface>
-          <max_contacts>10</max_contacts>
         </collision>
-        <collision name='base_link_fixed_joint_lump__laser_frame_collision_2'>
-          <pose>-0.104 0 0.202 0 -0 0</pose>
+        <visual name='visual'>
           <geometry>
-            <cylinder>
-              <length>0.04</length>
-              <radius>0.05</radius>
-            </cylinder>
+            <mesh>
+              <scale>10 10 10</scale>
+              <uri>model://construction_cone/meshes/construction_cone.dae</uri>
+            </mesh>
           </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='base_link_fixed_joint_lump__chassis_visual'>
-          <pose>-0.0585 0 0.059 0 -0 0</pose>
-          <geometry>
-            <box>
-              <size>0.335 0.265 0.138</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Orange</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
         </visual>
-        <visual name='base_link_fixed_joint_lump__caster_wheel_visual_1'>
-          <pose>-0.151 0 -0.008 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.025</radius>
-            </sphere>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/White</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <visual name='base_link_fixed_joint_lump__laser_frame_visual_2'>
-          <pose>-0.104 0 0.202 0 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <length>0.04</length>
-              <radius>0.05</radius>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Black</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <visual name='base_link_fixed_joint_lump__laser_frame_visual_3'>
-          <pose>-0.104 0 0.152 0 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <length>0.1</length>
-              <radius>0.01</radius>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Black</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <sensor name='laser' type='ray'>
-          <visualize>0</visualize>
-          <update_rate>10</update_rate>
-          <ray>
-            <scan>
-              <horizontal>
-                <samples>360</samples>
-                <min_angle>-3.14</min_angle>
-                <max_angle>3.14</max_angle>
-                <resolution>1</resolution>
-              </horizontal>
-              <vertical>
-                <samples>1</samples>
-                <min_angle>0</min_angle>
-                <max_angle>0</max_angle>
-              </vertical>
-            </scan>
-            <range>
-              <min>0.3</min>
-              <max>12</max>
-            </range>
-          </ray>
-          <plugin name='laser_controller' filename='libgazebo_ros_ray_sensor.so'>
-            <ros>
-              <argument>~/out:=scan</argument>
-            </ros>
-            <output_type>sensor_msgs/LaserScan</output_type>
-            <frame_name>laser_frame</frame_name>
-          </plugin>
-          <pose>-0.104 0 0.202 0 -0 0</pose>
-        </sensor>
         <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <joint name='left_wheel_joint' type='revolute'>
-        <pose relative_to='base_link'>0 0.1485 0 -1.5708 0 0</pose>
-        <parent>base_link</parent>
-        <child>left_wheel</child>
-        <axis>
-          <xyz>0 0 1</xyz>
-          <limit>
-            <lower>-1e+16</lower>
-            <upper>1e+16</upper>
-          </limit>
-          <dynamics>
-            <spring_reference>0</spring_reference>
-            <spring_stiffness>0</spring_stiffness>
-          </dynamics>
-        </axis>
-      </joint>
-      <link name='left_wheel'>
-        <pose relative_to='left_wheel_joint'>0 0 0 0 -0 0</pose>
         <inertial>
           <pose>0 0 0 0 -0 0</pose>
-          <mass>0.05</mass>
           <inertia>
-            <ixx>1.64292e-05</ixx>
+            <ixx>1</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>1.64292e-05</iyy>
+            <iyy>1</iyy>
             <iyz>0</iyz>
-            <izz>2.7225e-05</izz>
+            <izz>1</izz>
           </inertia>
+          <mass>1</mass>
         </inertial>
-        <collision name='left_wheel_collision'>
-          <pose>0 0 0 0 -0 0</pose>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>3.13975 2.50557 0 0 -0 0</pose>
+    </model>
+    <model name='Construction Cone_4'>
+      <link name='link'>
+        <collision name='collision'>
           <geometry>
-            <sphere>
-              <radius>0.033</radius>
-            </sphere>
+            <mesh>
+              <scale>10 10 10</scale>
+              <uri>model://construction_cone/meshes/construction_cone.dae</uri>
+            </mesh>
           </geometry>
+          <max_contacts>10</max_contacts>
           <surface>
             <contact>
               <ode/>
             </contact>
+            <bounce/>
             <friction>
-              <ode/>
               <torsional>
                 <ode/>
               </torsional>
+              <ode/>
             </friction>
-            <bounce/>
           </surface>
-          <max_contacts>10</max_contacts>
         </collision>
-        <visual name='left_wheel_visual'>
-          <pose>0 0 0 0 -0 0</pose>
+        <visual name='visual'>
           <geometry>
-            <cylinder>
-              <length>0.026</length>
-              <radius>0.033</radius>
-            </cylinder>
+            <mesh>
+              <scale>10 10 10</scale>
+              <uri>model://construction_cone/meshes/construction_cone.dae</uri>
+            </mesh>
           </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Blue</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
         </visual>
         <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <joint name='right_wheel_joint' type='revolute'>
-        <pose relative_to='base_link'>0 -0.1485 0 1.5708 -0 0</pose>
-        <parent>base_link</parent>
-        <child>right_wheel</child>
-        <axis>
-          <xyz>0 0 -1</xyz>
-          <limit>
-            <lower>-1e+16</lower>
-            <upper>1e+16</upper>
-          </limit>
-          <dynamics>
-            <spring_reference>0</spring_reference>
-            <spring_stiffness>0</spring_stiffness>
-          </dynamics>
-        </axis>
-      </joint>
-      <link name='right_wheel'>
-        <pose relative_to='right_wheel_joint'>0 0 0 0 -0 0</pose>
         <inertial>
           <pose>0 0 0 0 -0 0</pose>
-          <mass>0.05</mass>
           <inertia>
-            <ixx>1.64292e-05</ixx>
+            <ixx>1</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>1.64292e-05</iyy>
+            <iyy>1</iyy>
             <iyz>0</iyz>
-            <izz>2.7225e-05</izz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>2.74783 0.482258 0 0 -0 0</pose>
+    </model>
+    <model name='Construction Barrel_0'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0.4 0 -0 0</pose>
+          <mass>500</mass>
+          <inertia>
+            <ixx>51.2096</ixx>
+            <iyy>51.2096</iyy>
+            <izz>25</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
           </inertia>
         </inertial>
-        <collision name='right_wheel_collision'>
-          <pose>0 0 0 0 -0 0</pose>
+        <collision name='collision'>
           <geometry>
-            <sphere>
-              <radius>0.033</radius>
-            </sphere>
+            <mesh>
+              <uri>model://construction_barrel/meshes/construction_barrel.dae</uri>
+            </mesh>
           </geometry>
+          <max_contacts>10</max_contacts>
           <surface>
             <contact>
               <ode/>
             </contact>
+            <bounce/>
             <friction>
-              <ode/>
               <torsional>
                 <ode/>
               </torsional>
+              <ode/>
             </friction>
-            <bounce/>
           </surface>
-          <max_contacts>10</max_contacts>
         </collision>
-        <visual name='right_wheel_visual'>
-          <pose>0 0 0 0 -0 0</pose>
+        <visual name='visual'>
           <geometry>
-            <cylinder>
-              <length>0.026</length>
-              <radius>0.033</radius>
-            </cylinder>
+            <mesh>
+              <uri>model://construction_barrel/meshes/construction_barrel.dae</uri>
+            </mesh>
           </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Blue</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <plugin name='gazebo_ros_joint_state_publisher' filename='libgazebo_ros_joint_state_publisher.so'>
-        <update_rate>20</update_rate>
-        <joint_name>caster_wheel_joint</joint_name>
-        <joint_name>chassis_joint</joint_name>
-        <joint_name>left_wheel_joint</joint_name>
-        <joint_name>right_wheel_joint</joint_name>
-      </plugin>
-      <static>0</static>
-      <plugin name='gazebo_ros2_control' filename='libgazebo_ros2_control.so'>
-        <parameters>/home/shreyash/ros2_ws/install/my_bot/share/my_bot/config/my_controllers.yaml</parameters>
-      </plugin>
-      <pose>0 0 0 0 -0 0</pose>
+      <pose>-0.384075 3.41531 0 0 -0 0</pose>
+    </model>
+    <model name='Construction Cone'>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>10 10 10</scale>
+              <uri>model://construction_cone/meshes/construction_cone.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>10 10 10</scale>
+              <uri>model://construction_cone/meshes/construction_cone.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-2.60905 -1.62178 0 0 -0 0</pose>
     </model>
   </world>
 </sdf>
